@@ -13,6 +13,10 @@ sequelize.sync({
   // force: true,
 });
 
+// test
+app.get('/', (req, res) => {
+  res.send('Hello world');
+});
 
 app.use('/api', router);
 app.use(handleErrors);
